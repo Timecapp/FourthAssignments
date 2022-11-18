@@ -1,0 +1,94 @@
+PART 1: Algorithm Understanding
+Q1. How does the Gradient-Boosted Tree Algorithm work in Classification? 
+*A1:  Gradient Boosting is an iterative functional gradient algorithm, 
+i.e an algorithm which minimizes a loss function by iteratively choosing a function 
+that points towards the negative gradient; a weak hypothesis.*
+
+Q2. How does Gradient Boost differ from AdaBoost and Logistic Regression?
+*A2:  AdaBoost is the first designed boosting algorithm with a particular loss function. 
+Gradient Boosting is more flexible than Ada because it is a generic algorithm that assists 
+in searching the approximate solutions  to the additive modelling problem.*
+
+PART 2:  Interview Readiness
+Q1. What is a Delta Lake and how does it offer a solution to building reliable data pipelines?
+*A1: Delta Lake is an open source, optimized storage layer; it's the the foundation for storing data and 
+tables in Databricks Lakehouse Platform. 
+Delta Lake extends Parquet data files with a file-based transaction log for ACID 
+transactions and scalable metadata handling.*
+ 
+It is a useful solution in building reliable data pipelines because it uses Apache Spark execution 
+to improve performance, scalability, and reliability of a data lake. 
+The data lake is super convenient since it can be provided by any cloud provider inc. AWS, 
+Microsoft Azure, and Google Cloud Platform.
+
+Q.2 When working with Pandas, we use the class pandas.core.frame.DataFrame and 
+when working with the pandas API in Spark, we use the class pyspark.pandas.frame.DataFrame, a
+re these the same, explain why or why not?
+
+*A2: Pandas is an open-source Python library based on the NumPy library - Python package that lets you
+manipulate numerical data and time series using a variety of data structures and operations. 
+Used to make data import and analysis considerably easier. 
+Its tabular data structure is made of labeled axes (rows and columns). 
+The data, rows, and columns are the three main components of a Pandas DataFrame.
+Advantages:
+Pandas Dataframe able to Data Manipulation such as indexing, renaming, sorting, merging data frame.
+Updating, adding, and deleting columns are quite easier using Pandas.
+Pandas Dataframe supports multiple file formats
+Processing Time is too high due to the inbuilt function.
+Disadvantages:
+Manipulation becomes complex while we use a Huge dataset.
+Processing time can be slow during manipulation.
+
+Spark is a system for cluster computing. When compared to other cluster computing systems (such as Hadoop), it is faster. It has Python, Scala, and Java high-level APIs. In Spark, writing parallel jobs is simple. Spark is the most active Apache project at the moment, processing a large number of datasets. Spark is written in Scala and provides API in Python, Scala, Java, and R. In Spark, DataFrames are distributed data collections that are organized into rows and columns. Each column in a DataFrame is given a name and a type.
+
+Advantages:
+Spark carry easy to use API for operation large dataset.
+It not only supports ‘MAP’ and ‘reduce’, Machine learning (ML), Graph algorithms, Streaming data, SQL queries, etc.
+Spark uses in-memory(RAM) for computation.
+It offers 80 high-level operators to develop parallel applications.
+Disadvantages:
+No automatic optimization process
+Very few Algorithms.
+Small Files Issue
+
+Differences b/w Spark and Pandas
+Spark supports parallelization -pandas does not
+Spark DataFrame has Multiple Nodes - pandas has one
+Spark follows Lazy Execution which means that a task 
+is not executed until an action is performed - pandas uses eager execution so each task is executed immediately
+Spark is immutable - pandas is mutable
+Spark is better for scalable operations - pandas is not*
+
+
+
+Q3. What is a Machine Learning Pipeline is and why it’s important? 
+*A3: A pipeline athe end-to-end construct that orchestrates the flow of data into, 
+and output from, a machine learning model (or set of multiple models). 
+It includes raw data input, features, outputs, the machine 
+learning model and model parameters, and prediction outputs.
+
+Its purpose is to ingest raw dat  from data sources and then port it to 
+data store (data lake or data warehouse) for analysis. 
+Before data flows into a data repository, it usually undergoes some data processing.
+
+
+Q4. What are the steps in a Machine Learning workflow?
+The steps are iterative so there is a lot of going back and forth for evaluations and redesigning:
+Source and prepare your data.
+
+Develop your model.
+
+Train an ML model on your data:
+
+Train model
+Evaluate model accuracy
+Tune hyperparameters
+Deploy your trained model.
+
+Send prediction requests to your model:
+
+Online prediction
+Batch prediction
+Monitor the predictions on an ongoing basis.
+
+Manage your models and model versions.
